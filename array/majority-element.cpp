@@ -2,7 +2,7 @@ class Solution {
 public:
     int majorityElement(vector<int>& nums) {
         int ans=nums[0];
-        int f=0;
+        int f=1;
         for(int i=1;i<nums.size();i++)
         {
             if(nums[i]==nums[i-1])
@@ -11,7 +11,7 @@ public:
             }
             else
             {
-                f=0;
+                f=1;
                 ans=nums[i];
             }
             if(f>nums.size()/2)
