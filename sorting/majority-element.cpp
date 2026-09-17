@@ -14,7 +14,7 @@ public:
                 f=0;
                 ans=nums[i];
             }
-            if(f>nums.size())
+            if(f>nums.size()/2)
             {
                 return ans;
             }
